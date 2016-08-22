@@ -12,3 +12,18 @@
 # and which belongs in the Entry class.
 #
 # And... test your functionality using RSpec!
+require 'rspec'
+
+class Thesaurus
+
+  def add(word1, word2)
+    return word1 + word2
+  end  
+end
+
+class Entry < Thesaurus
+
+  def initialize(word, synonyms, antonyms)
+
+  end
+end

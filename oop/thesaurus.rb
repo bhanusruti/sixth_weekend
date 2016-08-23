@@ -14,16 +14,27 @@
 # And... test your functionality using RSpec!
 require 'rspec'
 
-class Thesaurus
+class Thesaurus < Entry
 
-  def add(word1, word2)
-    return word1 + word2
+  def add(word1, word2, word3)
+    return word1 + word2 + word3
   end  
+
+  def delete(word)
+  end
+
 end
 
-class Entry < Thesaurus
+class Entry
 
   def initialize(word, synonyms, antonyms)
 
   end
+  def look_up(synonyms)
+  end
+
+
+  def antonym(antonyms)
+  end
+
 end
